@@ -4,6 +4,9 @@
   "version": "0.1.0",
   "main": "src/pagination.less",
   "dependencies": {
-    "fj-buttons": "git://fake.ghe.domain/flapjack/fj-buttons.git"
+    "fj-buttons": "git://fake.ghe.domain/flapjack/fj-buttons.git",
+    "fj-colors": "git://fake.ghe.domain/flapjack/fj-colors.git",
+    "fj-typography": "git://fake.ghe.domain/flapjack/fj-typography.git",
+    "font-awesome": "~3.2.1"
   }
 }
