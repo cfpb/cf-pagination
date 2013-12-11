@@ -1,0 +1,9 @@
+{
+  "name": "fj-pagination",
+  "private": true,
+  "version": "0.1.0",
+  "main": "src/pagination.less",
+  "dependencies": {
+    "fj-buttons": "git://fake.ghe.domain/flapjack/fj-buttons.git"
+  }
+}
