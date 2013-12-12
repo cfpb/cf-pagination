@@ -38,10 +38,11 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-# Grunt.js #
-############
+# Dependencies #
+################
 node_modules/
+bower_components/
 
-# Testing Folder #
-##################
-preview
+# Testing FJ Visuals #
+######################
+fj-*-aid/
