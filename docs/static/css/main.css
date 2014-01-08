@@ -23,45 +23,56 @@
     - fj-forms
 */
 .pagination {
-  display: inline-block;
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
+  display: block;
   position: relative;
 }
 .pagination_form {
   display: block;
-  padding: 0.375em 0;
+  padding: 0.28125em 1.875em;
+  margin: 0.875em 0 0 0;
   background: #E3E4E5;
   color: #75787B;
   font-family: "Avenir Next", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+  text-align: center;
 }
 .pagination_next {
   position: absolute;
   right: 0;
 }
 .pagination_form > label {
-  display: inline;
-  font-size: 16px;
+  display: inline-block;
+  font-size: 14px;
   vertical-align: middle;
 }
 .pagination_current-page {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.875em;
   width: 2em;
   margin: 0 0.25em;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
   font-family: "Avenir Next Demi", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   text-align: right;
 }
-.pagination_submit {
-  margin: 0 0 0 2em;
+.pagination_submit,
+.pagination_submit.btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 0.875em;
 }
 @media only screen and (min-width: 480px) {
+  .pagination {
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    border-radius: 0.25em;
+    background: #E3E4E5;
+  }
+  .pagination_form {
+    background: transparent;
+  }
   .pagination_prev.btn,
   .pagination_prev.btn:link,
   .pagination_prev.btn:visited {
@@ -71,6 +82,10 @@
     -webkit-border-bottom-right-radius: 0;
     -moz-border-bottom-right-radius: 0;
     border-bottom-right-radius: 0;
+  }
+  .pagination_prev {
+    position: absolute;
+    left: 0;
   }
   .pagination_next.btn,
   .pagination_next.btn:link,
@@ -86,7 +101,7 @@
 /* topdoc
   name: EOF
   eof: true
-*/
+
 /* ==========================================================================
    Flapjack Front End
    Button Styling

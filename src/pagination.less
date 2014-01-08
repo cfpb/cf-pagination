@@ -25,10 +25,7 @@
 */
 
 .pagination {
-    display: inline-block;
-    -webkit-border-radius: unit( 4px / @base-font-size-px, em );
-       -moz-border-radius: unit( 4px / @base-font-size-px, em );
-            border-radius: unit( 4px / @base-font-size-px, em );
+    display: block;
     position: relative;
 }
 
@@ -42,10 +39,14 @@
 
 .pagination_form {
     display: block;
-    padding: unit( 6px / @base-font-size-px, em) 0;
+    padding:
+        unit( 4.5px / @base-font-size-px, em )
+        unit( 30px / @base-font-size-px, em);
+    margin: unit( 14px / @base-font-size-px, em) 0 0 0;
     background: #E3E4E5;
     color: #75787B;
     .webfont-regular;
+    text-align: center;
     // margin-right: -0.26em;
     // vertical-align: top;
     // font-size: 16px;
@@ -57,27 +58,47 @@
 }
 
 .pagination_form > label {
-    display: inline;
-    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
     vertical-align: middle;
 }
 
 .pagination_current-page {
-    width: 2em;
-    margin: 0 0.25em;
-    -webkit-border-radius: 0;
-       -moz-border-radius: 0;
-            border-radius: 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: unit( 14px / @base-font-size-px, em );
+    width: unit( 32px / @base-font-size-px, em );
+    margin: 0 unit( 4px / @base-font-size-px, em );
+    // -webkit-border-radius: 0;
+    //    -moz-border-radius: 0;
+    //         border-radius: 0;
     .webfont-demi;
     text-align: right;
 }
 
 .pagination_submit {
-    margin: 0 0 0 2em;
+    &,
+    &.btn {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 unit( 14px / @base-font-size-px, em );
+    }
 }
 
 
 @media only screen and (min-width: 480px) {
+
+    .pagination {
+        -webkit-border-radius: unit( 4px / @base-font-size-px, em );
+           -moz-border-radius: unit( 4px / @base-font-size-px, em );
+                border-radius: unit( 4px / @base-font-size-px, em );
+        background: #E3E4E5;
+    }
+
+    .pagination_form {
+        background: transparent;
+    }
 
     .pagination_prev {
         &.btn,
@@ -90,6 +111,11 @@
                -moz-border-bottom-right-radius: 0;
                     border-bottom-right-radius: 0;
         }
+    }
+
+    .pagination_prev {
+        position: absolute;
+        left: 0;
     }
 
     .pagination_next {
@@ -110,4 +136,3 @@
 /* topdoc
   name: EOF
   eof: true
-*/
