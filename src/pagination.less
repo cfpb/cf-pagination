@@ -1,7 +1,28 @@
 /* ==========================================================================
    Flapjack Front End
-   PAgination Styling
+   Pagination Styling
    ========================================================================== */
+
+/* topdoc
+    name: Pagination
+    family: fj-pagination
+    patterns:
+    - name: Default pagination
+      markup: |
+        <nav class="pagination">
+            <a class="btn btn-icon prev-page" href=""><i class="icon-chevron-left"></i> Previous</a>
+            <form class="pagination-form">
+                <label for="current-page">Page</label>
+                <input class="current-page" id="current-page" name="current-page" type="text" value="2" />
+                <label>of 149</label>
+                <button class="btn btn-link page-go" id="page-go" type="submit">Go</button>
+            </form>
+            <a class="btn btn-icon next-page" href="">Next <i class="icon-chevron-right"></i></a>
+        </nav>
+    tags:
+    - fj-buttons
+    - fj-forms
+*/
 
 .pagination {
     display: inline-block;
@@ -59,3 +80,8 @@ input.current-page {
 .pagination .page-go {
     margin: 0 0 0 2em;
 }
+
+/* topdoc
+  name: EOF
+  eof: true
+*/
