@@ -30,8 +30,8 @@
   position: relative;
 }
 .pagination_form {
-  display: inline-block;
-  padding: 0 4em;
+  display: block;
+  padding: 0.375em 0;
   background: #E3E4E5;
   color: #75787B;
   font-family: "Avenir Next", Arial, sans-serif;

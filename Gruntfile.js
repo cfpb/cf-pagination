@@ -176,6 +176,17 @@ module.exports = function(grunt) {
           }
         }
       }
+    },
+
+    watch: {
+      scripts: {
+        files: ['src/*.less','demo/*.css','docs/*.css'],
+        tasks: ['default'],
+        options: {
+          spawn: false,
+          livereload: true,
+        },
+      },
     }
 
   });
@@ -188,6 +199,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-string-replace');
   grunt.loadNpmTasks('grunt-topdoc');
 
