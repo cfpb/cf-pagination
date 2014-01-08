@@ -22,25 +22,25 @@
               <section>
 <nav class="pagination">
     <a class="btn pagination_prev" href=""><i class="btn-icon-left icon-chevron-left"></i> Previous</a>
+    <a class="btn pagination_next" href="">Next <i class="btn-icon-right icon-chevron-right"></i></a>
     <form class="pagination_form">
         <label for="pagination_current-page">Page</label>
         <input class="pagination_current-page" id="pagination_current-page" name="pagination_current-page" type="text" value="2" />
         <label>of 149</label>
         <button class="btn btn-link pagination_submit" id="pagination_submit" type="submit">Go</button>
     </form>
-    <a class="btn pagination_next" href="">Next <i class="btn-icon-right icon-chevron-right"></i></a>
 </nav>
 </section>
               <footer class="demo-pattern-list_footer">
                 <pre class="html"><code data-language="html">&lt;nav class=&quot;pagination&quot;&gt;
     &lt;a class=&quot;btn pagination_prev&quot; href=&quot;&quot;&gt;&lt;i class=&quot;btn-icon-left icon-chevron-left&quot;&gt;&lt;/i&gt; Previous&lt;/a&gt;
+    &lt;a class=&quot;btn pagination_next&quot; href=&quot;&quot;&gt;Next &lt;i class=&quot;btn-icon-right icon-chevron-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
     &lt;form class=&quot;pagination_form&quot;&gt;
         &lt;label for=&quot;pagination_current-page&quot;&gt;Page&lt;/label&gt;
         &lt;input class=&quot;pagination_current-page&quot; id=&quot;pagination_current-page&quot; name=&quot;pagination_current-page&quot; type=&quot;text&quot; value=&quot;2&quot; /&gt;
         &lt;label&gt;of 149&lt;/label&gt;
         &lt;button class=&quot;btn btn-link pagination_submit&quot; id=&quot;pagination_submit&quot; type=&quot;submit&quot;&gt;Go&lt;/button&gt;
     &lt;/form&gt;
-    &lt;a class=&quot;btn pagination_next&quot; href=&quot;&quot;&gt;Next &lt;i class=&quot;btn-icon-right icon-chevron-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;/nav&gt;</code></pre>
               </footer>
             </li>
@@ -51,31 +51,20 @@
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
+  position: relative;
+}
+.pagination_form {
+  display: inline-block;
+  padding: 0 4em;
   background: #E3E4E5;
   color: #75787B;
   font-family: &quot;Avenir Next&quot;, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
-.pagination_prev {
-  -webkit-border-radius-top-right: 0;
-  -moz-border-radius-top-right: 0;
-  border-radius-top-right: 0;
-  -webkit-border-radius-bottom-right: 0;
-  -moz-border-radius-bottom-right: 0;
-  border-radius-bottom-right: 0;
-}
 .pagination_next {
-  -webkit-border-radius-top-left: 0;
-  -moz-border-radius-top-left: 0;
-  border-radius-top-left: 0;
-  -webkit-border-radius-bottom-left: 0;
-  -moz-border-radius-bottom-left: 0;
-  border-radius-bottom-left: 0;
-}
-.pagination_form {
-  display: inline-block;
-  padding: 0 4em;
+  position: absolute;
+  right: 0;
 }
 .pagination_form &gt; label {
   display: inline;
@@ -95,6 +84,28 @@
 }
 .pagination_submit {
   margin: 0 0 0 2em;
+}
+@media only screen and (min-width: 480px) {
+  .pagination_prev.btn,
+  .pagination_prev.btn:link,
+  .pagination_prev.btn:visited {
+    -webkit-border-top-right-radius: 0;
+    -moz-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .pagination_next.btn,
+  .pagination_next.btn:link,
+  .pagination_next.btn:visited {
+    -webkit-border-top-left-radius: 0;
+    -moz-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }</code></pre>
           </div>
         </li>
