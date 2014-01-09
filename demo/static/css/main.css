@@ -12,9 +12,9 @@
             <a class="btn pagination_prev" href=""><i class="btn-icon-left icon-chevron-left"></i> Previous</a>
             <a class="btn pagination_next" href="">Next <i class="btn-icon-right icon-chevron-right"></i></a>
             <form class="pagination_form">
-                <label for="pagination_current-page">Page</label>
-                <input class="pagination_current-page" id="pagination_current-page" name="pagination_current-page" type="text" value="2" />
-                <label>of 149</label>
+                <label class="pagination_label" for="pagination_current-page">Page</label>
+                <input class="pagination_current-page" id="pagination_current-page" name="pagination_current-page" type="number" min="1" max="149" value="149" />
+                <label class="pagination_label" for="pagination_current-page">of 149</label>
                 <button class="btn btn-link pagination_submit" id="pagination_submit" type="submit">Go</button>
             </form>
         </nav>
@@ -24,54 +24,58 @@
 */
 .pagination {
   display: block;
+  /* Positions .pagination_next relative to this container */
   position: relative;
+}
+/* On small screens position .pagination_next to the right edge of .pagination */
+.pagination_next {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pagination_label {
+  display: inline-block;
+  vertical-align: middle;
 }
 .pagination_form {
   display: block;
-  padding: 0.28125em 1.875em;
-  margin: 0.875em 0 0 0;
+  padding: 0.32142857142857145em 2.142857142857143em;
+  margin: 1.1428571428571428em 0 0 0;
   background: #E3E4E5;
   color: #75787B;
   font-family: "Avenir Next", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 0.875em;
   text-align: center;
-}
-.pagination_next {
-  position: absolute;
-  right: 0;
-}
-.pagination_form > label {
-  display: inline-block;
-  font-size: 14px;
-  vertical-align: middle;
 }
 .pagination_current-page {
   display: inline-block;
   vertical-align: middle;
-  font-size: 0.875em;
-  width: 2em;
-  margin: 0 0.25em;
+  /* We need enough room for three digits and the number spinners for type="number" inputs */
+  width: 3em;
+  margin: 0 0.2857142857142857em;
   font-family: "Avenir Next Demi", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   text-align: right;
 }
-.pagination_submit,
 .pagination_submit.btn {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 0 0 0.875em;
+  margin: 0 0 0 1em;
+  /* A .btn nested in .pagination needs to have its font-size set back to 14px */
+  font-size: 1em;
 }
 @media only screen and (min-width: 480px) {
-  .pagination {
-    -webkit-border-radius: 0.25em;
-    -moz-border-radius: 0.25em;
-    border-radius: 0.25em;
-    background: #E3E4E5;
-  }
   .pagination_form {
-    background: transparent;
+    -webkit-border-radius: 0.2857142857142857em;
+    -moz-border-radius: 0.2857142857142857em;
+    border-radius: 0.2857142857142857em;
+  }
+  .pagination_prev {
+    position: absolute;
+    left: 0;
   }
   .pagination_prev.btn,
   .pagination_prev.btn:link,
@@ -82,10 +86,6 @@
     -webkit-border-bottom-right-radius: 0;
     -moz-border-bottom-right-radius: 0;
     border-bottom-right-radius: 0;
-  }
-  .pagination_prev {
-    position: absolute;
-    left: 0;
   }
   .pagination_next.btn,
   .pagination_next.btn:link,
@@ -101,7 +101,7 @@
 /* topdoc
   name: EOF
   eof: true
-
+*/
 /* ==========================================================================
    Flapjack Front End
    Button Styling

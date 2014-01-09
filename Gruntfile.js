@@ -160,7 +160,7 @@ module.exports = function(grunt) {
             title: '<%= pkg.name %> demo',
             repo: '<%= pkg.repository.url %>',
             ieSource: 'static/css/main.ie7.min.css',
-            custom: ''
+            custom: '<%= grunt.file.read("demo/custom.html") %>'
           }
         }
       },
@@ -176,17 +176,6 @@ module.exports = function(grunt) {
           }
         }
       }
-    },
-
-    watch: {
-      scripts: {
-        files: ['src/**','demo/**','docs/**'],
-        tasks: ['default'],
-        options: {
-          spawn: false,
-          livereload: true,
-        },
-      },
     }
 
   });
@@ -207,6 +196,6 @@ module.exports = function(grunt) {
    * Create custom task aliases and combinations
    */
   grunt.registerTask('vendor', ['clean', 'bower', 'copy:docs_assets', 'concat']);
-  grunt.registerTask('default', ['clean', 'concat', 'less', 'string-replace', 'copy:docs', 'topdoc:demo', 'topdoc:docs']);
+  grunt.registerTask('default', ['clean', 'concat', 'less', 'string-replace', 'copy:docs', 'topdoc']);
 
 };
