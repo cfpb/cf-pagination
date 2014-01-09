@@ -57,6 +57,7 @@
   /* Resets the padding back to 4px now that the font-size is 14px */
   padding: 0.2857142857142857em;
   margin: 0 0.2857142857142857em;
+  /* Keep in mind that text inputs are 16px by default but 14px in .pagination to match the rest of the tex */
   font-size: 0.875em;
   font-family: "Avenir Next Demi", Arial, sans-serif;
   font-style: normal;
