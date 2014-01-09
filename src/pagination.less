@@ -43,18 +43,18 @@
 .pagination_label {
     display: inline-block;
     vertical-align: middle;
+    font-size: unit( @pagination-font-size / @base-font-size-px, em );
 }
 
 .pagination_form {
     display: block;
     padding:
-        unit( 4px / @pagination-font-size, em )
-        unit( 30px / @pagination-font-size, em);
-    margin: unit( 16px / @pagination-font-size, em) 0 0 0;
+        unit( 4px / @base-font-size-px, em )
+        unit( 30px / @base-font-size-px, em);
+    margin: unit( 16px / @base-font-size-px, em) 0 0 0;
     background: #E3E4E5;
     color: #75787B;
     .webfont-regular;
-    font-size: unit( @pagination-font-size / @base-font-size-px, em );
     text-align: center;
 }
 
@@ -72,6 +72,7 @@
     //    -moz-border-radius: 0;
     //         border-radius: 0;
 
+    font-size: unit( @pagination-font-size / @base-font-size-px, em );
     .webfont-demi;
     text-align: right;
 
@@ -88,8 +89,6 @@
     display: inline-block;
     vertical-align: middle;
     margin: 0 0 0 unit( 14px / @pagination-font-size, em );
-    /* A .btn nested in .pagination needs to have its font-size set back to 14px */
-    font-size: 1em;
 }
 
 @media only screen and (min-width: 480px) {
