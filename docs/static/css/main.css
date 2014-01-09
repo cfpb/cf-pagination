@@ -39,7 +39,7 @@
 }
 .pagination_form {
   display: block;
-  padding: 0.32142857142857145em 2.142857142857143em;
+  padding: 0.2857142857142857em 2.142857142857143em;
   margin: 1.1428571428571428em 0 0 0;
   background: #E3E4E5;
   color: #75787B;
@@ -54,6 +54,8 @@
   vertical-align: middle;
   /* We need enough room for three digits and the number spinners for type="number" inputs */
   width: 3em;
+  /* Resets the padding back to 4px now that the font-size is 14px */
+  padding: 0.2857142857142857em;
   margin: 0 0.2857142857142857em;
   font-family: "Avenir Next Demi", Arial, sans-serif;
   font-style: normal;

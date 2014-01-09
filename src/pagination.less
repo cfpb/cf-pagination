@@ -48,7 +48,7 @@
 .pagination_form {
     display: block;
     padding:
-        unit( 4.5px / @pagination-font-size, em )
+        unit( 4px / @pagination-font-size, em )
         unit( 30px / @pagination-font-size, em);
     margin: unit( 16px / @pagination-font-size, em) 0 0 0;
     background: #E3E4E5;
@@ -63,6 +63,8 @@
     vertical-align: middle;
     /* We need enough room for three digits and the number spinners for type="number" inputs */
     width: unit( 42px / @pagination-font-size, em );
+    /* Resets the padding back to 4px now that the font-size is 14px */
+    padding: unit( 4px / @pagination-font-size, em );
     margin: 0 unit( 4px / @pagination-font-size, em );
 
     // Not yet needed but I have a feeling we might need it
