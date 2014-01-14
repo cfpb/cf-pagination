@@ -45,12 +45,12 @@ module.exports = function(grunt) {
         ],
         dest: 'src/vendor/fj-fe/fj.less',
       },
-      ie7: {
+      ltIE8: {
         src: [
           'src/vendor/font-awesome/font-awesome-ie7.min.css'
         ],
         // Using .min keeps topdoc from rendering it as a demo page
-        dest: 'demo/static/css/main.ie7.min.css',
+        dest: 'demo/static/css/main.lt-ie8.min.css',
       },
     },
 
@@ -74,7 +74,7 @@ module.exports = function(grunt) {
         files: {
           'demo/static/css/': [
             'demo/static/css/main.css',
-            'demo/static/css/main.ie7.css'
+            'demo/static/css/main.lt-ie8.css'
           ]
         },
         options: {
@@ -128,6 +128,17 @@ module.exports = function(grunt) {
       }
     },
 
+    legacssy: {
+      demo: {
+        options: {
+          legacyWidth: 960
+        },
+        files: {
+          'demo/static/css/main.lt-ie9.min.css': 'demo/static/css/main.css'
+        }
+      }
+    },
+
     copy: {
       docs_assets: {
         files:
@@ -156,10 +167,12 @@ module.exports = function(grunt) {
           destination: 'demo/',
           template: 'node_modules/fj-component-demo/' + ( grunt.option('tpl') || 'raw' ) + '/',
           templateData: {
+            ltIE9AltSource: 'static/css/main.lt-ie9.min.css',
+            ltIE8Source: 'static/css/main.lt-ie8.min.css',
+            html5Shiv: true,
             family: '<%= pkg.name %>',
             title: '<%= pkg.name %> demo',
             repo: '<%= pkg.repository.url %>',
-            ieSource: 'static/css/main.ie7.min.css',
             custom: '<%= grunt.file.read("demo/custom.html") %>'
           }
         }
@@ -189,6 +202,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-legacssy');
   grunt.loadNpmTasks('grunt-string-replace');
   grunt.loadNpmTasks('grunt-topdoc');
 
@@ -196,6 +210,6 @@ module.exports = function(grunt) {
    * Create custom task aliases and combinations
    */
   grunt.registerTask('vendor', ['clean', 'bower', 'copy:docs_assets', 'concat']);
-  grunt.registerTask('default', ['clean', 'concat', 'less', 'string-replace', 'copy:docs', 'topdoc']);
+  grunt.registerTask('default', ['clean', 'concat', 'less', 'string-replace', 'copy:docs', 'topdoc', 'legacssy']);
 
 };
