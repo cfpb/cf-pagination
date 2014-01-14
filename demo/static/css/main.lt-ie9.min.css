@@ -78,6 +78,11 @@
   margin: 0 0 0 1em;
 }
 
+.lt-ie8 .pagination_submit.btn {
+  zoom: 1;
+  display: inline;
+}
+
 .pagination_form {
   -webkit-border-radius: 0.2857142857142857em;
   -moz-border-radius: 0.2857142857142857em;

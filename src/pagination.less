@@ -90,6 +90,10 @@
     display: inline-block;
     vertical-align: middle;
     margin: 0 0 0 unit( 14px / @pagination-font-size, em );
+    .lt-ie8 & {
+        zoom: 1;
+        display: inline;
+    }
 }
 
 @media only screen and (min-width: 480px) {
