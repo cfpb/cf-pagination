@@ -1,8 +1,8 @@
 {
-  "name": "fj-pagination",
+  "name": "cf-pagination",
   "description": "Basic form styling for the Flapjack front-end framework.",
   "version": "0.2.0",
-  "homepage": "http://fake.ghe.domain/pages/flapjack/fj-pagination",
+  "homepage": "http://fake.ghe.domain/pages/flapjack/cf-pagination",
   "author": {
     "name": "Consumer Financial Protection Bureau",
     "email": "michael.morici@cfpb.gov",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://fake.ghe.domain/flapjack/fj-pagination.git"
+    "url": "http://fake.ghe.domain/flapjack/cf-pagination.git"
   },
   "bugs": {
-    "url": "http://fake.ghe.domain/flapjack/fj-pagination/issues"
+    "url": "http://fake.ghe.domain/flapjack/cf-pagination/issues"
   },
   "licenses": [
     {
       "type": "Public Domain",
-      "url": "http://fake.ghe.domain/pages/flapjack/fj-pagination/blob/master/LICENSE"
+      "url": "http://fake.ghe.domain/pages/flapjack/cf-pagination/blob/master/LICENSE"
     }
   ],
   "engines": {
