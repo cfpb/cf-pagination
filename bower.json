@@ -7,7 +7,7 @@
     "fj-buttons": "git://fake.ghe.domain/flapjack/fj-buttons.git",
     "fj-colors": "git://fake.ghe.domain/flapjack/fj-colors.git",
     "fj-forms": "git://fake.ghe.domain/flapjack/fj-forms.git",
-    "fj-typography": "git://fake.ghe.domain/flapjack/fj-typography.git",
+    "cf-typography": "git://fake.ghe.domain/flapjack/cf-typography.git",
     "font-awesome": "~3.2.1"
   },
   "exportsOverride": {
