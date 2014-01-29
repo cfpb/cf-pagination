@@ -197,7 +197,7 @@ module.exports = function(grunt) {
           template: 'node_modules/fj-component-demo/' + ( grunt.option('tpl') || 'code_examples' ) + '/',
           templateData: {
             family: '<%= pkg.name %>',
-            title: '<%= pkg.name %> demo',
+            title: '<%= pkg.name %> docs',
             repo: '<%= pkg.repository.url %>'
           }
         }
