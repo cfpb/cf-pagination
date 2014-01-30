@@ -115,26 +115,46 @@
    ========================================================================== */
 
 /* topdoc
+    name: LESS notes
+    family: cf-buttons
+    patterns:
+    - name: Variables
+      codenotes:
+        - "@btn-font-size: 14px;"
+        - "@btn-v-padding: 9px;"
+        - "@btn-v-padding-modifier-ie: .8;"
+      notes:
+        - "@btn-v-padding-modifier-ie is used to fix the vertical padding bug in IE for <button>'s and <inputs>'s
+          across various .btn styles. We should revisit this after adding normalize.css to see if this is still needed."
+    tags:
+    - cf-buttons
+    - less
+*/
+
+/* topdoc
     name: Default button
-    family: fj-buttons
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
     patterns:
     - name: Default state
       markup: |
         <a href="#" class="btn">Anchor Tag</a>
         <button class="btn">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn" />
+        <input type="submit" value="Input Tag" class="btn">
     - name: Hovered/focused state
       markup: |
         <a href="#" class="btn hover">Anchor Tag</a>
         <button class="btn hover">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn hover" />
+        <input type="submit" value="Input Tag" class="btn hover">
     - name: Active state
       markup: |
         <a href="#" class="btn active">Anchor Tag</a>
         <button class="btn active">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn active" />
+        <input type="submit" value="Input Tag" class="btn active">
     tags:
-    - fj-buttons
+    - cf-buttons
 */
 
 .btn,
@@ -196,25 +216,28 @@ input.btn::-moz-focus-inner {
 
 /* topdoc
     name: Secondary button
-    family: fj-buttons
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
     patterns:
     - name: Default state
       markup: |
         <a href="#" class="btn btn-secondary">Anchor Tag</a>
         <button class="btn btn-secondary">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn-secondary" />
+        <input type="submit" value="Input Tag" class="btn btn-secondary">
     - name: Hovered/focused state
       markup: |
         <a href="#" class="btn btn-secondary hover">Anchor Tag</a>
         <button class="btn btn-secondary hover">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn-secondary hover" />
+        <input type="submit" value="Input Tag" class="btn btn-secondary hover">
     - name: Active state
       markup: |
         <a href="#" class="btn btn-secondary active">Anchor Tag</a>
         <button class="btn btn-secondary active">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn-secondary active" />
+        <input type="submit" value="Input Tag" class="btn btn-secondary active">
     tags:
-    - fj-buttons
+    - cf-buttons
 */
 
 .btn-secondary,
@@ -237,25 +260,28 @@ input.btn::-moz-focus-inner {
 
 /* topdoc
     name: Destructive action button
-    family: fj-buttons
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
     patterns:
     - name: Default state
       markup: |
         <a href="#" class="btn btn-warning">Anchor Tag</a>
         <button class="btn btn-warning">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn-warning" />
+        <input type="submit" value="Input Tag" class="btn btn-warning">
     - name: Hovered/focused state
       markup: |
         <a href="#" class="btn btn-warning hover">Anchor Tag</a>
         <button class="btn btn-warning hover">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn-warning hover" />
+        <input type="submit" value="Input Tag" class="btn btn-warning hover">
     - name: Active state
       markup: |
         <a href="#" class="btn btn-warning active">Anchor Tag</a>
         <button class="btn btn-warning active">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn-warning active" />
+        <input type="submit" value="Input Tag" class="btn btn-warning active">
     tags:
-    - fj-buttons
+    - cf-buttons
 */
 
 .btn-warning,
@@ -278,15 +304,18 @@ input.btn::-moz-focus-inner {
 
 /* topdoc
     name: Disabled button
-    family: fj-buttons
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
     patterns:
     - name: Default/hovered/focused/active state
       markup: |
         <a href="#" class="btn btn-disabled">Anchor Tag</a>
         <button class="btn btn-disabled">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn-disabled" />
+        <input type="submit" value="Input Tag" class="btn btn-disabled">
     tags:
-    - fj-buttons
+    - cf-buttons
 */
 
 .btn-disabled,
@@ -305,25 +334,25 @@ input.btn::-moz-focus-inner {
 
 /* topdoc
     name: Super button
-    family: fj-buttons
+    family: cf-buttons
     patterns:
     - name: Default state
       markup: |
         <a href="#" class="btn btn-super">Anchor Tag</a>
         <button class="btn btn-super">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn-super" />
+        <input type="submit" value="Input Tag" class="btn btn-super">
     - name: Hovered/focused state
       markup: |
         <a href="#" class="btn btn-super hover">Anchor Tag</a>
         <button class="btn btn-super hover">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn-super hover" />
+        <input type="submit" value="Input Tag" class="btn btn-super hover">
     - name: Active state
       markup: |
         <a href="#" class="btn btn-super active">Anchor Tag</a>
         <button class="btn btn-super active">Button Tag</button>
-        <input type="submit" value="Input Tag" class="btn btn-super active" />
+        <input type="submit" value="Input Tag" class="btn btn-super active">
     tags:
-    - fj-buttons
+    - cf-buttons
 */
 
 .btn-super,
@@ -345,7 +374,7 @@ input.btn::-moz-focus-inner {
 
 /* topdoc
     name: Button with icons
-    family: fj-buttons
+    family: cf-buttons
     patterns:
     - name: Button icon left
       markup: |
@@ -376,7 +405,7 @@ input.btn::-moz-focus-inner {
             <i class="icon-search"><span class="jekyll-bug"></span></i>
         </button>
     tags:
-    - fj-buttons
+    - cf-buttons
     - fj-icons
 */
 
@@ -393,7 +422,7 @@ input.btn::-moz-focus-inner {
 }
 
 .btn-disabled .btn-icon-left {
-  border-right-color: #75787b;
+  border-right-color: #babbbd;
 }
 
 .btn-icon-right {
@@ -405,12 +434,12 @@ input.btn::-moz-focus-inner {
 }
 
 .btn-disabled .btn-icon-right {
-  border-left-color: #75787b;
+  border-left-color: #babbbd;
 }
 
 /* topdoc
     name: Button group
-    family: fj-buttons
+    family: cf-buttons
     patterns:
     - name: Default buttons in a button group
       markup: |
@@ -425,9 +454,9 @@ input.btn::-moz-focus-inner {
             <button class="btn">Button 3</button>
         </div><br>
         <div class="btn-group">
-            <input type="button" value="Input 1" class="btn" />
-            <input type="button" value="Input 2" class="btn" />
-            <input type="button" value="Input 3" class="btn" />
+            <input type="button" value="Input 1" class="btn">
+            <input type="button" value="Input 2" class="btn">
+            <input type="button" value="Input 3" class="btn">
         </div>
     - name: Super buttons in a button group
       markup: |
@@ -442,12 +471,12 @@ input.btn::-moz-focus-inner {
             <button class="btn btn-super">Button 3</button>
         </div><br>
         <div class="btn-group">
-            <input type="button" value="Input 1" class="btn btn-super" />
-            <input type="button" value="Input 2" class="btn btn-super" />
-            <input type="button" value="Input 3" class="btn btn-super" />
+            <input type="button" value="Input 1" class="btn btn-super">
+            <input type="button" value="Input 2" class="btn btn-super">
+            <input type="button" value="Input 3" class="btn btn-super">
         </div>
     tags:
-    - fj-buttons
+    - cf-buttons
 */
 
 .btn-group .btn:first-child:not(:last-child) {
@@ -474,7 +503,10 @@ input.btn::-moz-focus-inner {
 
 /* topdoc
     name: Compound button
-    family: fj-buttons
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
     patterns:
     - name: Default button style
       markup: |
@@ -507,7 +539,7 @@ input.btn::-moz-focus-inner {
             <button class="btn btn-super btn-compound-action"><i class="icon-caret-down"><span class="jekyll-bug"></span></i></button>
         </div>
     tags:
-    - fj-buttons
+    - cf-buttons
     - fj-icons
 */
 
@@ -540,30 +572,33 @@ input.btn::-moz-focus-inner {
 
 /* topdoc
     name: Button link
-    family: fj-buttons
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
     patterns:
     - name: Default state
       markup: |
         <a href="#" class="btn btn-link">Anchor Tag</a>
         <button class="btn btn-link">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn-link" />
+        <input type="button" value="Input Tag" class="btn btn-link">
     - name: Hovered state
       markup: |
         <a href="#" class="btn btn-link hover">Anchor Tag</a>
         <button class="btn btn-link hover">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn-link hover" />
+        <input type="button" value="Input Tag" class="btn btn-link hover">
     - name: Focused state
       markup: |
         <a href="#" class="btn btn-link focus">Anchor Tag</a>
         <button class="btn btn-link focus">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn-link focus" />
+        <input type="button" value="Input Tag" class="btn btn-link focus">
     - name: Active state
       markup: |
         <a href="#" class="btn btn-link active">Anchor Tag</a>
         <button class="btn btn-link active">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn-link active" />
+        <input type="button" value="Input Tag" class="btn btn-link active">
     tags:
-    - fj-buttons
+    - cf-buttons
 */
 
 .btn-link,
@@ -605,30 +640,33 @@ input.btn::-moz-focus-inner {
 
 /* topdoc
     name: Destructive action button link
-    family: fj-buttons
+    family: cf-buttons
+    notes:
+      - "Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not 
+        be used in production."
     patterns:
     - name: Default state
       markup: |
         <a href="#" class="btn btn-link btn-warning">Anchor Tag</a>
         <button class="btn btn-link btn-warning">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn-link btn-warning" />
+        <input type="button" value="Input Tag" class="btn btn-link btn-warning">
     - name: Hovered state
       markup: |
         <a href="#" class="btn btn-link btn-warning hover">Anchor Tag</a>
         <button class="btn btn-link btn-warning hover">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn-link btn-warning hover" />
+        <input type="button" value="Input Tag" class="btn btn-link btn-warning hover">
     - name: Focused state
       markup: |
         <a href="#" class="btn btn-link btn-warning focus">Anchor Tag</a>
         <button class="btn btn-link btn-warning focus">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn-link btn-warning focus" />
+        <input type="button" value="Input Tag" class="btn btn-link btn-warning focus">
     - name: Active state
       markup: |
         <a href="#" class="btn btn-link btn-warning active">Anchor Tag</a>
         <button class="btn btn-link btn-warning active">Button Tag</button>
-        <input type="button" value="Input Tag" class="btn btn-link btn-warning active" />
+        <input type="button" value="Input Tag" class="btn btn-link btn-warning active">
     tags:
-    - fj-buttons
+    - cf-buttons
 */
 
 .btn-link.btn-warning,
@@ -678,26 +716,38 @@ label {
 
 /* topdoc
     name: Single/Multi-Line Text Inputs
-    family: fj-forms
+    family: cf-forms
     patterns:
     - name: Default single-line text input
-      markup: <input placeholder="placeholder text" type="text">
+      markup: |
+        <input placeholder="placeholder text" type="text">
     - name: Focused single-line text input
-      markup: <input class="focus" placeholder="placeholder text" type="text">
+      markup: |
+        <input class="focus" placeholder="placeholder text" type="text">
     - name: Field in error state
-      markup: <input class="error" type="text" value="Invalid input"> <i class="icon-remove-sign"><span class="jekyll-bug"></span></i>
+      markup: |
+        <input class="error" type="text" value="Invalid input">
+        <i class="icon-remove-sign"><span class="jekyll-bug"></span></i>
     - name: Field in success state
-      markup: <input class="success" type="text" value="Validated input"> <i class="icon-ok-sign"><span class="jekyll-bug"></span></i>
+      markup: |
+        <input class="success" type="text" value="Validated input">
+        <i class="icon-ok-sign"><span class="jekyll-bug"></span></i>
     - name: Default multi-line text box
-      markup: <textarea>Example entry</textarea>
+      markup: |
+        <textarea>Example entry</textarea>
     - name: Focused multi-line text box
-      markup: <textarea class="focus">Example entry</textarea>
+      markup: |
+        <textarea class="focus">Example entry</textarea>
     - name: Multi-line text box in error state
-      markup: <textarea class="error">Invalid input</textarea> <i class="icon-remove-sign"><span class="jekyll-bug"></span></i>
+      markup: |
+        <textarea class="error">Invalid input</textarea>
+        <i class="icon-remove-sign"><span class="jekyll-bug"></span></i>
     - name: Multi-line text box in success state
-      markup: <textarea class="success">Validated input</textarea> <i class="icon-ok-sign"><span class="jekyll-bug"></span></i>
+      markup: |
+        <textarea class="success">Validated input</textarea>
+        <i class="icon-ok-sign"><span class="jekyll-bug"></span></i>
     tags:
-    - fj-forms
+    - cf-forms
 */
 
 input,
