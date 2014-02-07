@@ -1,7 +1,19 @@
 {
   "name": "cf-pagination",
-  "private": true,
   "version": "0.3.0",
+  "keywords": ["capital-framework", "capital", "pagination", "less"],
+  "authors": [
+    {
+      "name": "Consumer Financial Protection Bureau",
+      "url": "http://cfpb.github.io/"
+    }
+  ],
+  "homepage": "https://github.com/cfpb/cf-pagination",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cfpb/cf-pagination.git"
+  },
+  "license": "https://github.com/cfpb/cf-pagination/blob/master/TERMS.md",
   "main": "src/pagination.less",
   "dependencies": {
     "fj-buttons": "git://fake.ghe.domain/flapjack/fj-buttons.git",
