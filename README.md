@@ -7,7 +7,7 @@ developed at the [Consumer Financial Protection Bureau](http://cfpb.github.io/).
 (Includes [Font Awesome](http://fontawesome.io/) for icons until the CFPB icon font is released.)
 
 If you would like to take advantage of more components or if you're new to Capital Framework,
-we encourage you to [start here](https://github.com/cfpb/capital-framework).
+we encourage you to [start here](https://github.com/cfpb/capital-framework). (Coming soon.)
 
 - [View the docs](http://cfpb.github.io/cf-pagination/docs/)
 - [See the raw demo](http://cfpb.github.io/cf-pagination/demo/)
