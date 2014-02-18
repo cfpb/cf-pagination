@@ -1,24 +1,22 @@
 {
   "name": "cf-pagination",
-  "description": "Basic form styling for the Flapjack front-end framework.",
+  "description": "Basic pagination styling for Capital Framework.",
+  "keywords": ["capital-framework", "capital", "pagination", "less"],
   "version": "0.3.0",
-  "homepage": "http://fake.ghe.domain/pages/flapjack/cf-pagination",
   "author": {
     "name": "Consumer Financial Protection Bureau",
-    "email": "michael.morici@cfpb.gov",
     "url": "http://cfpb.github.io/"
   },
+  "homepage": "https://github.com/cfpb/cf-pagination",
   "repository": {
     "type": "git",
-    "url": "http://fake.ghe.domain/flapjack/cf-pagination.git"
+    "url": "https://github.com/cfpb/cf-pagination.git"
   },
-  "bugs": {
-    "url": "http://fake.ghe.domain/flapjack/cf-pagination/issues"
-  },
+  "bugs": "https://github.com/cfpb/cf-pagination/issues",
   "licenses": [
     {
       "type": "Public Domain",
-      "url": "http://fake.ghe.domain/pages/flapjack/cf-pagination/blob/master/LICENSE"
+      "url": "https://github.com/cfpb/cf-pagination/blob/master/TERMS.md"
     }
   ],
   "engines": {
@@ -39,7 +37,6 @@
     "grunt-legacssy": "~0.3.1",
     "grunt-string-replace": "latest",
     "grunt-topdoc": "~0.2.0",
-    "fj-component-demo": "git://fake.ghe.domain/flapjack/fj-component-demo.git"
-  },
-  "keywords": []
+    "cf-component-demo": "git://fake.ghe.domain/flapjack/fj-component-demo.git"
+  }
 }
