@@ -19,12 +19,12 @@
       "url": "https://github.com/cfpb/cf-pagination/blob/master/TERMS.md"
     }
   ],
-  "main": "src/pagination.less",
+  "main": "src/fj-pagination.less",
   "engines": {
     "node": ">=0.8.0"
   },
   "devDependencies": {
-    "cf-component-demo": "git://fake.ghe.domain/flapjack/fj-component-demo.git",
+    "cf-component-demo": "git://github.com/cfpb/cf-component-demo.git",
     "grunt": "latest",
     "grunt-autoprefixer": "latest",
     "grunt-bower-task": "~0.3.2",
