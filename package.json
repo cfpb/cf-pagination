@@ -1,8 +1,8 @@
 {
   "name": "cf-pagination",
+  "version": "0.3.0",
   "description": "Basic pagination styling for Capital Framework.",
   "keywords": ["capital-framework", "capital", "pagination", "less"],
-  "version": "0.3.0",
   "author": {
     "name": "Consumer Financial Protection Bureau",
     "url": "http://cfpb.github.io/"
@@ -19,13 +19,12 @@
       "url": "https://github.com/cfpb/cf-pagination/blob/master/TERMS.md"
     }
   ],
+  "main": "src/pagination.less",
   "engines": {
     "node": ">=0.8.0"
   },
-  "scripts": {
-    "test": "grunt jasmine"
-  },
   "devDependencies": {
+    "cf-component-demo": "git://fake.ghe.domain/flapjack/fj-component-demo.git",
     "grunt": "latest",
     "grunt-autoprefixer": "latest",
     "grunt-bower-task": "~0.3.2",
@@ -36,7 +35,6 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-legacssy": "~0.3.1",
     "grunt-string-replace": "latest",
-    "grunt-topdoc": "~0.2.0",
-    "cf-component-demo": "git://fake.ghe.domain/flapjack/fj-component-demo.git"
+    "grunt-topdoc": "~0.2.0"
   }
 }

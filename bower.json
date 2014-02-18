@@ -1,6 +1,7 @@
 {
   "name": "cf-pagination",
   "version": "0.3.0",
+  "description": "Basic pagination styling for Capital Framework.",
   "keywords": ["capital-framework", "capital", "pagination", "less"],
   "authors": [
     {
@@ -16,21 +17,18 @@
   "license": "https://github.com/cfpb/cf-pagination/blob/master/TERMS.md",
   "main": "src/pagination.less",
   "dependencies": {
-    "fj-buttons": "git://fake.ghe.domain/flapjack/fj-buttons.git",
-    "fj-colors": "git://fake.ghe.domain/flapjack/fj-colors.git",
-    "fj-forms": "git://fake.ghe.domain/flapjack/fj-forms.git",
-    "cf-typography": "git://fake.ghe.domain/flapjack/cf-typography.git",
+    "cf-buttons": "git://github.com/cfpb/cf-buttons.git",
+    "cf-colors": "git://github.com/cfpb/cf-colors.git",
+    "cf-forms": "git://github.com/cfpb/cf-forms.git",
+    "cf-typography": "git://github.com/cfpb/cf-typography.git",
     "font-awesome": "~3.2.1"
   },
   "exportsOverride": {
-    "fj-*": {
-      "css": "src/*.css",
-      "less": "src/*.less",
-      "fonts": "src/fonts/*.*"
-    },
-    "cfpb-font-icons": {
-      "css": "src/*.css",
-      "fonts": "static/fonts/*.*"
+    "cf-*": {
+      "css": "src/**/*.css",
+      "less": "src/**/*.less",
+      "fonts": "src/fonts/*.*",
+      "js": "src/**/*.js"
     },
     "font-awesome": {
       "css": "css/*.css",
