@@ -19,7 +19,7 @@
       "url": "https://github.com/cfpb/cf-pagination/blob/master/TERMS.md"
     }
   ],
-  "main": "src/fj-pagination.less",
+  "main": "src/cf-pagination.less",
   "engines": {
     "node": ">=0.8.0"
   },
