@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/cfpb/cf-pagination.git"
   },
-  "license": "https://github.com/cfpb/cf-pagination/blob/master/TERMS.md",
+  "license": "https://github.com/cfpb/cf-pagination/blob/gh-pages/TERMS.md",
   "main": "src/cf-pagination.less",
   "dependencies": {
     "cf-buttons": "git://github.com/cfpb/cf-buttons.git",
