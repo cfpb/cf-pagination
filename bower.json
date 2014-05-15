@@ -1,6 +1,6 @@
 {
   "name": "cf-pagination",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Basic pagination styling for Capital Framework.",
   "keywords": ["capital-framework", "capital", "pagination", "less"],
   "authors": [
