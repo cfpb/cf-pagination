@@ -38,7 +38,7 @@ all uses of the work, to the fullest extent permitted by applicable law.
 When using or citing the work, you should not imply endorsement by the
 author or the affirmer.
 
-[policy]: http://github.com/cfpb/source-code-policy/
+[policy]: https://github.com/cfpb/source-code-policy/
 [CC0]: http://creativecommons.org/publicdomain/zero/1.0/legalcode
 
 
@@ -53,5 +53,5 @@ author or the affirmer.
   - Font licensed under the SIL OFL 1.1.
   - CSS licensed under the MIT License.
 - [Normalize](https://necolas.github.io/normalize.css/) by Nicolas Gallagher,
-  co-created with Jonathan Neal is licensed under MIT.
+  co-created with Jonathan Neal, is licensed under MIT.
   

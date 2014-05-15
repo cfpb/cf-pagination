@@ -1,5 +1,8 @@
 # cf-pagination
 
+[![Bower dependency status](https://www.versioneye.com/user/projects/5375312d14c158f59200001b/badge.svg)](https://www.versioneye.com/user/projects/5375312d14c158f59200001b)
+[![npm dependency status](https://gemnasium.com/cfpb/cf-pagination.svg)](https://gemnasium.com/cfpb/cf-pagination)
+
 Basic pagination styling.
 This component can be used by itself, but it was made for Capital Framework,
 a new front end framework developed at the
