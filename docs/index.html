@@ -10,12 +10,12 @@
     <link rel="stylesheet" type="text/css" href="static/demo/brackets.css">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="demo-wrapper">
       <header class="demo_header">
         <h1 class="h5">cf-pagination docs</h1>
       </header>
       <ul class="demo-component-list">
-        <li id="pagination" class="demo-component-list_item wrapper">
+        <li id="pagination" class="demo-component-list_item demo-wrapper">
           <h1 class="demo-component-list_header">Pagination</h1>
           <ul class="demo-pattern-list">
             <li class="demo-pattern-list_item">
@@ -24,26 +24,26 @@
               </header>
               <section>
 <nav class="pagination">
-    <a class="btn pagination_prev" href="#"><i class="btn-icon-left icon-chevron-left"></i> Previous</a>
+    <a class="btn pagination_prev" href="#"><span class="btn-icon-left cf-icon cf-icon-left"></span> Previous</a>
     <form class="pagination_form">
         <label class="pagination_label" for="pagination_current-page">Page</label>
         <input class="pagination_current-page" id="pagination_current-page" name="pagination_current-page" type="number" min="1" max="149" value="149" />
         <label class="pagination_label" for="pagination_current-page">of 149</label>
         <button class="btn btn-link pagination_submit" id="pagination_submit" type="submit">Go</button>
     </form>
-    <a class="btn pagination_next" href="#">Next <i class="btn-icon-right icon-chevron-right"></i></a>
+    <a class="btn pagination_next" href="#">Next <span class="btn-icon-right cf-icon cf-icon-right"></span></a>
 </nav>
 </section>
               <footer class="demo-pattern-list_footer">
                 <pre class="html"><code data-language="html">&lt;nav class=&quot;pagination&quot;&gt;
-    &lt;a class=&quot;btn pagination_prev&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;btn-icon-left icon-chevron-left&quot;&gt;&lt;/i&gt; Previous&lt;/a&gt;
+    &lt;a class=&quot;btn pagination_prev&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;btn-icon-left cf-icon cf-icon-left&quot;&gt;&lt;/span&gt; Previous&lt;/a&gt;
     &lt;form class=&quot;pagination_form&quot;&gt;
         &lt;label class=&quot;pagination_label&quot; for=&quot;pagination_current-page&quot;&gt;Page&lt;/label&gt;
         &lt;input class=&quot;pagination_current-page&quot; id=&quot;pagination_current-page&quot; name=&quot;pagination_current-page&quot; type=&quot;number&quot; min=&quot;1&quot; max=&quot;149&quot; value=&quot;149&quot; /&gt;
         &lt;label class=&quot;pagination_label&quot; for=&quot;pagination_current-page&quot;&gt;of 149&lt;/label&gt;
         &lt;button class=&quot;btn btn-link pagination_submit&quot; id=&quot;pagination_submit&quot; type=&quot;submit&quot;&gt;Go&lt;/button&gt;
     &lt;/form&gt;
-    &lt;a class=&quot;btn pagination_next&quot; href=&quot;#&quot;&gt;Next &lt;i class=&quot;btn-icon-right icon-chevron-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class=&quot;btn pagination_next&quot; href=&quot;#&quot;&gt;Next &lt;span class=&quot;btn-icon-right cf-icon cf-icon-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
 &lt;/nav&gt;</code></pre>
               </footer>
             </li>
@@ -73,12 +73,32 @@
   margin: 1em 0 0 0;
   background: #E3E4E5;
   color: #75787B;
-  font-family: &quot;Avenir Next&quot;, Arial, sans-serif;
+  font-family: &quot;AvenirNextLTW01-Regular&quot;, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   text-align: center;
 }
-.pagination_current-page {
+.pagination_form em,
+.pagination_form i {
+  font-family: &quot;AvenirNextLTW01-Italic&quot;, Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .pagination_form em,
+.lt-ie9 .pagination_form i {
+  font-style: normal !important;
+}
+.pagination_form strong,
+.pagination_form b {
+  font-family: &quot;AvenirNextLTW01-Demi&quot;, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .pagination_form strong,
+.lt-ie9 .pagination_form b {
+  font-weight: normal !important;
+}
+input[type=&quot;number&quot;].pagination_current-page {
   display: inline-block;
   vertical-align: middle;
   /* We need enough room for three digits and the number spinners for type=&quot;number&quot; inputs */
@@ -88,10 +108,13 @@
   margin: 0 0.28571429em;
   /* Keep in mind that text inputs are 16px by default but 14px in .pagination to match the rest of the tex */
   font-size: 0.875em;
-  font-family: &quot;Avenir Next Demi&quot;, Arial, sans-serif;
+  font-family: &quot;AvenirNextLTW01-Demi&quot;, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   text-align: right;
+}
+.lt-ie9 input[type=&quot;number&quot;].pagination_current-page {
+  font-weight: normal !important;
 }
 .pagination_submit.btn {
   display: inline-block;
