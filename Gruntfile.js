@@ -48,7 +48,7 @@ module.exports = function(grunt) {
 
       // Set whether you'd like to use a JS hack to force a redraw in the browser
       // to avoid an IE8 bug where fonts do not appear or appear as boxes on load.
-      // ie8FontFaceHack: true,
+      ie8FontFaceHack: true,
 
       // Set a path to a concatenated JS file that you'd like to add before the
       // closing body tag.
