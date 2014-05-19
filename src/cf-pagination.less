@@ -60,34 +60,38 @@
     text-align: center;
 }
 
-input[type="number"].pagination_current-page {
-    // Selector must be that specific to override cf-forms input[attr] selector.
+.pagination_current-page {
+    &,
+    input[type="number"]&,
+    input[type="text"]& {
+        // Selector must be that specific to override cf-forms input[attr] selector.
 
-    display: inline-block;
-    vertical-align: middle;
-    /* We need enough room for three digits and the number spinners for type="number" inputs */
-    width: unit( 42px / @pagination-font-size, em );
-    /* Resets the padding back to 4px now that the font-size is 14px */
-    padding: unit( 4px / @pagination-font-size, em );
-    margin: 0 unit( 4px / @pagination-font-size, em );
+        display: inline-block;
+        vertical-align: middle;
+        /* We need enough room for three digits and the number spinners for type="number" inputs */
+        width: unit( 42px / @pagination-font-size, em );
+        /* Resets the padding back to 4px now that the font-size is 14px */
+        padding: unit( 4px / @pagination-font-size, em );
+        margin: 0 unit( 4px / @pagination-font-size, em );
 
-    // Not yet needed but I have a feeling we might need it
-    // -webkit-border-radius: 0;
-    //    -moz-border-radius: 0;
-    //         border-radius: 0;
+        // Not yet needed but I have a feeling we might need it
+        // -webkit-border-radius: 0;
+        //    -moz-border-radius: 0;
+        //         border-radius: 0;
 
-    /* Keep in mind that text inputs are 16px by default but 14px in .pagination to match the rest of the tex */
-    font-size: unit( @pagination-font-size / @base-font-size-px, em );
-    .webfont-demi;
-    text-align: right;
+        /* Keep in mind that text inputs are 16px by default but 14px in .pagination to match the rest of the tex */
+        font-size: unit( @pagination-font-size / @base-font-size-px, em );
+        .webfont-demi;
+        text-align: right;
 
-    // Removes Webkit spinner UI
-    // http://css-tricks.com/snippets/css/turn-off-number-input-spinners/
-    // input&[type=number]::-webkit-inner-spin-button, 
-    // input&[type=number]::-webkit-outer-spin-button { 
-    //     -webkit-appearance: none; 
-    //     margin: 0; 
-    // }
+        // Removes Webkit spinner UI
+        // http://css-tricks.com/snippets/css/turn-off-number-input-spinners/
+        // input&[type=number]::-webkit-inner-spin-button, 
+        // input&[type=number]::-webkit-outer-spin-button { 
+        //     -webkit-appearance: none; 
+        //     margin: 0; 
+        // }
+    }
 }
 
 .pagination_submit.btn {
