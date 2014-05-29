@@ -62,11 +62,6 @@
   top: 0;
   right: 0;
 }
-.pagination_label {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 0.875em;
-}
 .pagination_form {
   display: block;
   padding: 0.25em 1.875em;
@@ -98,6 +93,15 @@
 .lt-ie9 .pagination_form b {
   font-weight: normal !important;
 }
+.pagination_label {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.875em;
+}
+.lt-ie8 .pagination_label {
+  zoom: 1;
+  display: inline;
+}
 .pagination_current-page,
 input[type=&quot;number&quot;].pagination_current-page,
 input[type=&quot;text&quot;].pagination_current-page {
@@ -120,10 +124,25 @@ input[type=&quot;text&quot;].pagination_current-page {
 .lt-ie9 input[type=&quot;text&quot;].pagination_current-page {
   font-weight: normal !important;
 }
+.lt-ie8 .pagination_current-page,
+.lt-ie8 input[type=&quot;number&quot;].pagination_current-page,
+.lt-ie8 input[type=&quot;text&quot;].pagination_current-page {
+  zoom: 1;
+  display: inline;
+  margin: 0 4px;
+}
 .pagination_submit.btn {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 0 1em;
+}
+.lt-ie8 .pagination_submit.btn {
+  zoom: 1;
+  display: inline;
+  border: none;
+  padding-left: 1em;
+  margin: 0;
+  text-decoration: underline;
 }
 @media only screen and (min-width: 30em) {
   .pagination_form {
