@@ -36,6 +36,11 @@
         <label class="pagination_label"
                for="pagination_current-page">
             Page
+            <!-- When we have access to the u-visually-hidden class
+                 we should use it to add more context to the input. -->
+            <!-- <span class="u-visually-hidden">
+                number out of 10 total pages
+            </span> -->
         </label>
         <input
             class="pagination_current-page"
@@ -44,6 +49,9 @@
             type="number" min="1" max="149"
             value="149">
         <span class="pagination_label">
+            <!-- When we have access to the u-visually-hidden class
+                 we can hide this text from screen readers since it
+                 will be read within the label. -->
             <!-- <span aria-hidden="true"> -->
                 of 149
             <!-- </span> -->
@@ -70,6 +78,11 @@
         &lt;label class=&quot;pagination_label&quot;
                for=&quot;pagination_current-page&quot;&gt;
             Page
+            &lt;!-- When we have access to the u-visually-hidden class
+                 we should use it to add more context to the input. --&gt;
+            &lt;!-- &lt;span class=&quot;u-visually-hidden&quot;&gt;
+                number out of 10 total pages
+            &lt;/span&gt; --&gt;
         &lt;/label&gt;
         &lt;input
             class=&quot;pagination_current-page&quot;
@@ -78,6 +91,9 @@
             type=&quot;number&quot; min=&quot;1&quot; max=&quot;149&quot;
             value=&quot;149&quot;&gt;
         &lt;span class=&quot;pagination_label&quot;&gt;
+            &lt;!-- When we have access to the u-visually-hidden class
+                 we can hide this text from screen readers since it
+                 will be read within the label. --&gt;
             &lt;!-- &lt;span aria-hidden=&quot;true&quot;&gt; --&gt;
                 of 149
             &lt;!-- &lt;/span&gt; --&gt;
