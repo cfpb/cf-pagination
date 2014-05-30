@@ -1,6 +1,6 @@
 {
   "name": "cf-pagination",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Basic pagination styling for Capital Framework.",
   "keywords": ["capital-framework", "capital", "pagination", "less"],
   "authors": [
@@ -31,10 +31,6 @@
       "less": "src/**/*.less",
       "fonts": "src/fonts/*.*",
       "js": "src/**/*.js"
-    },
-    "font-awesome": {
-      "css": "css/*.css",
-      "fonts": "font/*.*"
     }
   }
 }

@@ -72,12 +72,6 @@
     right: 0;
 }
 
-.pagination_label {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: unit( @pagination-font-size / @base-font-size-px, em );
-}
-
 .pagination_form {
     display: block;
     padding:
@@ -88,6 +82,18 @@
     color: #75787B;
     .webfont-regular;
     text-align: center;
+}
+
+.pagination_label {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: unit( @pagination-font-size / @base-font-size-px, em );
+
+    .lt-ie8 & {
+        // Hack IE7 inline-block into submission.
+        zoom: 1;
+        display: inline;
+    }
 }
 
 .pagination_current-page {
@@ -121,6 +127,13 @@
         //     -webkit-appearance: none; 
         //     margin: 0; 
         // }
+
+        .lt-ie8 & {
+            // Hack IE7 inline-block into submission.
+            zoom: 1;
+            display: inline;
+            margin: 0 4px;
+        }
     }
 }
 
@@ -128,12 +141,26 @@
     display: inline-block;
     vertical-align: middle;
     margin: 0 0 0 unit( 14px / @pagination-font-size, em );
+
+    .lt-ie8 & {
+        // Hack IE7 inline-block into submission.
+        zoom: 1;
+        display: inline;
+
+        // The lines below are necessary to prevent a weird jump that happens when
+        // hovering over the Go button in IE7.
+        border: none;
+        padding-left: unit( 14px / @pagination-font-size, em );
+        margin: 0;
+        text-decoration: underline;
+    }
 }
 
 @media only screen and (min-width: (unit(480px / @base-font-size-px, em))) {
 
     .pagination_form {
         border-radius: unit( 4px / @pagination-font-size, em );
+        margin: 0;
     }
 
     .pagination_prev {
