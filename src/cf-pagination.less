@@ -9,16 +9,20 @@
     patterns:
     - name: Default pagination
       markup: |
+        <div id="pagination_content"></div>
+
+        <!-- Paginated content here -->
+
         <nav class="pagination">
-            <a class="btn pagination_prev" href="#">
+            <a class="btn pagination_prev" href="#pagination_content">
                 <span class="btn-icon-left cf-icon cf-icon-left"></span>
                 Previous
             </a>
-            <a class="btn pagination_next" href="#">
+            <a class="btn pagination_next" href="#pagination_content">
                 Next
                 <span class="btn-icon-right cf-icon cf-icon-right"></span>
             </a>
-            <form class="pagination_form">
+            <form class="pagination_form" action="index.html#pagination_content">
                 <label class="pagination_label"
                        for="pagination_current-page">
                     Page

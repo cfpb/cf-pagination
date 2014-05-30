@@ -23,16 +23,20 @@
                 <h3>Default pagination</h3>
               </header>
               <section>
+<div id="pagination_content"></div>
+
+<!-- Paginated content here -->
+
 <nav class="pagination">
-    <a class="btn pagination_prev" href="#">
+    <a class="btn pagination_prev" href="#pagination_content">
         <span class="btn-icon-left cf-icon cf-icon-left"></span>
         Previous
     </a>
-    <a class="btn pagination_next" href="#">
+    <a class="btn pagination_next" href="#pagination_content">
         Next
         <span class="btn-icon-right cf-icon cf-icon-right"></span>
     </a>
-    <form class="pagination_form">
+    <form class="pagination_form" action="index.html#pagination_content">
         <label class="pagination_label"
                for="pagination_current-page">
             Page
@@ -65,16 +69,20 @@
 </nav>
 </section>
               <footer class="demo-pattern-list_footer">
-                <pre class="html"><code data-language="html">&lt;nav class=&quot;pagination&quot;&gt;
-    &lt;a class=&quot;btn pagination_prev&quot; href=&quot;#&quot;&gt;
+                <pre class="html"><code data-language="html">&lt;div id=&quot;pagination_content&quot;&gt;&lt;/div&gt;
+
+&lt;!-- Paginated content here --&gt;
+
+&lt;nav class=&quot;pagination&quot;&gt;
+    &lt;a class=&quot;btn pagination_prev&quot; href=&quot;#pagination_content&quot;&gt;
         &lt;span class=&quot;btn-icon-left cf-icon cf-icon-left&quot;&gt;&lt;/span&gt;
         Previous
     &lt;/a&gt;
-    &lt;a class=&quot;btn pagination_next&quot; href=&quot;#&quot;&gt;
+    &lt;a class=&quot;btn pagination_next&quot; href=&quot;#pagination_content&quot;&gt;
         Next
         &lt;span class=&quot;btn-icon-right cf-icon cf-icon-right&quot;&gt;&lt;/span&gt;
     &lt;/a&gt;
-    &lt;form class=&quot;pagination_form&quot;&gt;
+    &lt;form class=&quot;pagination_form&quot; action=&quot;index.html#pagination_content&quot;&gt;
         &lt;label class=&quot;pagination_label&quot;
                for=&quot;pagination_current-page&quot;&gt;
             Page
