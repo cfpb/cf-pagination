@@ -6,18 +6,55 @@
 /* topdoc
     name: Pagination
     family: cf-pagination
+    notes:
+      - "To enable the component to jump directly to the paginated content place
+        place #pagination_content directly above your paginated content."
     patterns:
     - name: Default pagination
       markup: |
+        <div id="pagination_content"></div>
+
+        <!-- Paginated content here -->
+
         <nav class="pagination">
-            <a class="btn pagination_prev" href="#"><span class="btn_icon__left cf-icon cf-icon-left"></span> Previous</a>
-            <form class="pagination_form">
-                <label class="pagination_label" for="pagination_current-page">Page</label>
-                <input class="pagination_current-page" id="pagination_current-page" name="pagination_current-page" type="number" min="1" max="149" value="149" />
-                <label class="pagination_label" for="pagination_current-page">of 149</label>
-                <button class="btn btn__link pagination_submit" id="pagination_submit" type="submit">Go</button>
+            <a class="btn pagination_prev" href="#pagination_content">
+                <span class="btn_icon__left cf-icon cf-icon-left"></span>
+                Previous
+            </a>
+            <a class="btn pagination_next" href="#pagination_content">
+                Next
+                <span class="btn_icon__right cf-icon cf-icon-right"></span>
+            </a>
+            <form class="pagination_form" action="index.html#pagination_content">
+                <label class="pagination_label"
+                       for="pagination_current-page">
+                    Page
+                    <!-- When we have access to the u-visually-hidden class
+                         we should use it to add more context to the input. -->
+                    <!-- <span class="u-visually-hidden">
+                        number out of 149 total pages
+                    </span> -->
+                </label>
+                <input
+                    class="pagination_current-page"
+                    id="pagination_current-page"
+                    name="pagination_current-page"
+                    type="number" min="1" max="149"
+                    value="149">
+                <span class="pagination_label">
+                    <!-- When we have access to the u-visually-hidden class
+                         we can hide this text from screen readers since it
+                         will be read within the label. -->
+                    <!-- <span aria-hidden="true"> -->
+                        of 149
+                    <!-- </span> -->
+                </span>
+                <button class="btn btn__link pagination_submit"
+                        id="pagination_submit"
+                        type="submit">
+                    Go
+                </button>
             </form>
-            <a class="btn pagination_next" href="#">Next <span class="btn_icon__right cf-icon cf-icon-right"></span></a>
         </nav>
     tags:
     - fj-buttons
