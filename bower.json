@@ -1,6 +1,6 @@
 {
   "name": "cf-pagination",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "description": "Basic pagination styling for Capital Framework.",
   "keywords": ["capital-framework", "capital", "pagination", "less"],
   "authors": [
@@ -18,12 +18,8 @@
   "main": "src/cf-pagination.less",
   "dependencies": {
     "cf-buttons": "git://github.com/cfpb/cf-buttons.git",
-    "cf-colors": "git://github.com/cfpb/cf-colors.git",
-    "cf-icons": "git://github.com/cfpb/cf-icons.git",
-    "cf-forms": "git://github.com/cfpb/cf-forms.git",
-    "cf-typography": "git://github.com/cfpb/cf-typography.git",
-    "normalize-css": "~3.0.0",
-    "normalize-legacy-addon": "git://github.com/cfpb/normalize-legacy-addon.git#0.1.0"
+    "cf-core": "git://github.com/cfpb/cf-core.git",
+    "cf-icons": "git://github.com/cfpb/cf-icons.git"
   },
   "exportsOverride": {
     "cf-*": {
