@@ -5,39 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>cf-pagination docs</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="static/demo/demo.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic">
+    <link rel="stylesheet" type="text/css" href="static/docs/brackets.css">
+    <link rel="stylesheet" type="text/css" href="static/docs/docs.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
-    <link rel="stylesheet" type="text/css" href="static/demo/brackets.css">
   </head>
   <body>
-    <div class="demo-wrapper">
-      <header class="demo_header">
-        <h1 class="h5">cf-pagination docs</h1>
-      </header>
-      <ul class="demo-component-list">
-        <li id="pagination" class="demo-component-list_item demo-wrapper">
-          <h1 class="demo-component-list_header">Pagination</h1>
-          <ul class="demo_notes">
-            <li>To enable the component to jump directly to the paginated content place place #pagination_content directly above your paginated content.</li>
-          </ul>
-          <ul class="demo-pattern-list">
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <h3>Default pagination</h3>
-              </header>
-              <section>
+    <div class="docs-masthead">
+      <h1 class="docs-title"><span class="docs-icon">&lt;/&gt;</span> cf-pagination docs
+      </h1><a href="https://github.com/cfpb/cf-pagination" class="docs-repo">view the repository</a>
+    </div>
+    <div id="pagination" class="docs-component">
+      <h2 class="docs-component_header"><span>Pagination</span></h2>
+      <div class="docs-component_intro">
+        <ul class="docs-notes">
+          <li>To enable the component to jump directly to the paginated content place place #pagination_content directly above your paginated content.</li>
+        </ul>
+      </div>
+      <div class="docs-patterns">
+        <div class="docs-pattern">
+          <h3 class="docs-pattern_header">Default pagination</h3>
+          <section class="docs-pattern_pattern">
 <div id="pagination_content"></div>
 
 <!-- Paginated content here -->
 
 <nav class="pagination">
     <a class="btn pagination_prev" href="#pagination_content">
-        <span class="btn-icon-left cf-icon cf-icon-left"></span>
+        <span class="btn_icon__left cf-icon cf-icon-left"></span>
         Previous
     </a>
     <a class="btn pagination_next" href="#pagination_content">
         Next
-        <span class="btn-icon-right cf-icon cf-icon-right"></span>
+        <span class="btn_icon__right cf-icon cf-icon-right"></span>
     </a>
     <form class="pagination_form" action="index.html#pagination_content">
         <label class="pagination_label"
@@ -63,27 +63,28 @@
                 of 149
             <!-- </span> -->
         </span>
-        <button class="btn btn-link pagination_submit"
+        <button class="btn btn__link pagination_submit"
                 id="pagination_submit"
                 type="submit">
             Go
         </button>
     </form>
 </nav>
-</section>
-              <footer class="demo-pattern-list_footer">
-                <pre class="html"><code data-language="html">&lt;div id=&quot;pagination_content&quot;&gt;&lt;/div&gt;
+
+          </section>
+          <footer class="docs-pattern_footer">
+            <pre class="docs-code docs-pattern_markup"><code data-language="html">&lt;div id=&quot;pagination_content&quot;&gt;&lt;/div&gt;
 
 &lt;!-- Paginated content here --&gt;
 
 &lt;nav class=&quot;pagination&quot;&gt;
     &lt;a class=&quot;btn pagination_prev&quot; href=&quot;#pagination_content&quot;&gt;
-        &lt;span class=&quot;btn-icon-left cf-icon cf-icon-left&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;btn_icon__left cf-icon cf-icon-left&quot;&gt;&lt;/span&gt;
         Previous
     &lt;/a&gt;
     &lt;a class=&quot;btn pagination_next&quot; href=&quot;#pagination_content&quot;&gt;
         Next
-        &lt;span class=&quot;btn-icon-right cf-icon cf-icon-right&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;btn_icon__right cf-icon cf-icon-right&quot;&gt;&lt;/span&gt;
     &lt;/a&gt;
     &lt;form class=&quot;pagination_form&quot; action=&quot;index.html#pagination_content&quot;&gt;
         &lt;label class=&quot;pagination_label&quot;
@@ -109,18 +110,18 @@
                 of 149
             &lt;!-- &lt;/span&gt; --&gt;
         &lt;/span&gt;
-        &lt;button class=&quot;btn btn-link pagination_submit&quot;
+        &lt;button class=&quot;btn btn__link pagination_submit&quot;
                 id=&quot;pagination_submit&quot;
                 type=&quot;submit&quot;&gt;
             Go
         &lt;/button&gt;
     &lt;/form&gt;
 &lt;/nav&gt;</code></pre>
-              </footer>
-            </li>
-          </ul>
-          <div class="demo-pattern-css">
-            <pre class="css"><code data-language="css">.pagination {
+          </footer>
+        </div>
+      </div>
+      <div class="docs-css">
+        <pre class="docs-code"><code data-language="css">.pagination {
   display: block;
   margin: 0;
   padding: 0;
@@ -135,10 +136,10 @@
 }
 .pagination_form {
   display: block;
-  padding: 0.25em 1.875em;
+  padding: 0.1875em 1.875em;
   margin: 1em 0 0 0;
-  background: #E3E4E5;
-  color: #75787B;
+  background: #e3e4e5;
+  color: #75787b;
   font-family: &quot;AvenirNextLTW01-Regular&quot;, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -154,11 +155,47 @@
 .lt-ie9 .pagination_form i {
   font-style: normal !important;
 }
+.lt-ie9 .pagination_form em,
+.lt-ie9 .pagination_form i {
+  font-style: normal !important;
+}
 .pagination_form strong,
 .pagination_form b {
   font-family: &quot;AvenirNextLTW01-Demi&quot;, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
+}
+.lt-ie9 .pagination_form strong,
+.lt-ie9 .pagination_form b {
+  font-weight: normal !important;
+}
+.lt-ie9 .pagination_form strong,
+.lt-ie9 .pagination_form b {
+  font-weight: normal !important;
+}
+.pagination_form em,
+.pagination_form i {
+  font-family: &quot;AvenirNextLTW01-Italic&quot;, Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .pagination_form em,
+.lt-ie9 .pagination_form i {
+  font-style: normal !important;
+}
+.lt-ie9 .pagination_form em,
+.lt-ie9 .pagination_form i {
+  font-style: normal !important;
+}
+.pagination_form strong,
+.pagination_form b {
+  font-family: &quot;AvenirNextLTW01-Demi&quot;, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .pagination_form strong,
+.lt-ie9 .pagination_form b {
+  font-weight: normal !important;
 }
 .lt-ie9 .pagination_form strong,
 .lt-ie9 .pagination_form b {
@@ -189,6 +226,11 @@ input[type=&quot;text&quot;].pagination_current-page {
   font-style: normal;
   font-weight: bold;
   text-align: right;
+}
+.lt-ie9 .pagination_current-page,
+.lt-ie9 input[type=&quot;number&quot;].pagination_current-page,
+.lt-ie9 input[type=&quot;text&quot;].pagination_current-page {
+  font-weight: normal !important;
 }
 .lt-ie9 .pagination_current-page,
 .lt-ie9 input[type=&quot;number&quot;].pagination_current-page,
@@ -238,13 +280,8 @@ input[type=&quot;text&quot;].pagination_current-page {
     border-bottom-left-radius: 0;
   }
 }</code></pre>
-          </div>
-        </li>
-      </ul>
-      <footer class="wrapper-footer">
-        <h4><a href="https://github.com/cfpb/cf-pagination">View the repository</a></h4>
-      </footer>
+      </div>
     </div>
-    <script src="static/demo/main.min.js"></script>
+    <script src="static/docs/main.min.js"></script>
   </body>
 </html>

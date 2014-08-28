@@ -18,12 +18,12 @@
 
         <nav class="pagination">
             <a class="btn pagination_prev" href="#pagination_content">
-                <span class="btn-icon-left cf-icon cf-icon-left"></span>
+                <span class="btn_icon__left cf-icon cf-icon-left"></span>
                 Previous
             </a>
             <a class="btn pagination_next" href="#pagination_content">
                 Next
-                <span class="btn-icon-right cf-icon cf-icon-right"></span>
+                <span class="btn_icon__right cf-icon cf-icon-right"></span>
             </a>
             <form class="pagination_form" action="index.html#pagination_content">
                 <label class="pagination_label"
@@ -49,7 +49,7 @@
                         of 149
                     <!-- </span> -->
                 </span>
-                <button class="btn btn-link pagination_submit"
+                <button class="btn btn__link pagination_submit"
                         id="pagination_submit"
                         type="submit">
                     Go
@@ -82,11 +82,11 @@
 .pagination_form {
     display: block;
     padding:
-        unit( 4px / @base-font-size-px, em )
+        unit( 3px / @base-font-size-px, em )
         unit( 30px / @base-font-size-px, em);
     margin: unit( 16px / @base-font-size-px, em) 0 0 0;
-    background: #E3E4E5;
-    color: #75787B;
+    background: @gray-20;
+    color: @gray;
     .webfont-regular;
     text-align: center;
 }
