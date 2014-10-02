@@ -5,27 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>cf-pagination docs</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="static/demo/demo.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic">
+    <link rel="stylesheet" type="text/css" href="static/docs/brackets.css">
+    <link rel="stylesheet" type="text/css" href="static/docs/docs.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
-    <link rel="stylesheet" type="text/css" href="static/demo/brackets.css">
   </head>
   <body>
-    <div class="demo-wrapper">
-      <header class="demo_header">
-        <h1 class="h5">cf-pagination docs</h1>
-      </header>
-      <ul class="demo-component-list">
-        <li id="pagination" class="demo-component-list_item demo-wrapper">
-          <h1 class="demo-component-list_header">Pagination</h1>
-          <ul class="demo_notes">
-            <li>To enable the component to jump directly to the paginated content place place #pagination_content directly above your paginated content.</li>
-          </ul>
-          <ul class="demo-pattern-list">
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <h3>Default pagination</h3>
-              </header>
-              <section>
+    <div class="docs-masthead">
+      <h1 class="docs-title"><span class="docs-icon">&lt;/&gt;</span> cf-pagination docs
+      </h1><a href="https://github.com/cfpb/cf-pagination" class="docs-repo">view the repository</a>
+    </div>
+    <div id="pagination" class="docs-component">
+      <h2 class="docs-component_header"><span>Pagination</span></h2>
+      <div class="docs-component_intro">
+        <ul class="docs-notes">
+          <li>To enable the component to jump directly to the paginated content place place #pagination_content directly above your paginated content.</li>
+        </ul>
+      </div>
+      <div class="docs-patterns">
+        <div class="docs-pattern">
+          <h3 class="docs-pattern_header">Default pagination</h3>
+          <section class="docs-pattern_pattern">
 <div id="pagination_content"></div>
 
 <!-- Paginated content here -->
@@ -65,9 +65,10 @@
         </button>
     </form>
 </nav>
-</section>
-              <footer class="demo-pattern-list_footer">
-                <pre class="html"><code data-language="html">&lt;div id=&quot;pagination_content&quot;&gt;&lt;/div&gt;
+
+          </section>
+          <footer class="docs-pattern_footer">
+            <pre class="docs-code docs-pattern_markup"><code data-language="html">&lt;div id=&quot;pagination_content&quot;&gt;&lt;/div&gt;
 
 &lt;!-- Paginated content here --&gt;
 
@@ -106,11 +107,11 @@
         &lt;/button&gt;
     &lt;/form&gt;
 &lt;/nav&gt;</code></pre>
-              </footer>
-            </li>
-          </ul>
-          <div class="demo-pattern-css">
-            <pre class="css"><code data-language="css">.pagination {
+          </footer>
+        </div>
+      </div>
+      <div class="docs-css">
+        <pre class="docs-code"><code data-language="css">.pagination {
   display: block;
   position: relative;
 }
@@ -124,35 +125,11 @@
     margin: 1em 0 0;
   }
 }
-@media only all and (max-width: 19.9375em) {
-  .pagination_prev.btn,
-  .pagination_next.btn {
-    display: block;
-    text-align: center;
-  }
-  .pagination_prev.btn + .pagination_next.btn {
-    margin: 1em 0 0;
-  }
-}
 @media only all and (min-width: 20em) {
   .pagination_next {
     position: absolute;
     top: 0;
     right: 0;
-  }
-}
-@media only all and (min-width: 20em) {
-  .pagination_next {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-@media only all and (max-width: 23.0625em) {
-  .pagination_prev.btn,
-  .pagination_next.btn {
-    padding-left: 1.11111111em;
-    padding-right: 1.11111111em;
   }
 }
 @media only all and (max-width: 23.0625em) {
@@ -182,12 +159,6 @@
 .lt-ie8 .pagination_label {
   display: inline;
 }
-.lt-ie8 .pagination_label {
-  display: inline;
-}
-.lt-ie9 .pagination_label {
-  font-weight: normal !important;
-}
 .lt-ie9 .pagination_label {
   font-weight: normal !important;
 }
@@ -209,16 +180,6 @@ input[type=&quot;text&quot;].pagination_current-page {
 .lt-ie8 input[type=&quot;text&quot;].pagination_current-page {
   display: inline;
 }
-.lt-ie8 .pagination_current-page,
-.lt-ie8 input[type=&quot;number&quot;].pagination_current-page,
-.lt-ie8 input[type=&quot;text&quot;].pagination_current-page {
-  display: inline;
-}
-.lt-ie9 .pagination_current-page,
-.lt-ie9 input[type=&quot;number&quot;].pagination_current-page,
-.lt-ie9 input[type=&quot;text&quot;].pagination_current-page {
-  font-weight: normal !important;
-}
 .lt-ie9 .pagination_current-page,
 .lt-ie9 input[type=&quot;number&quot;].pagination_current-page,
 .lt-ie9 input[type=&quot;text&quot;].pagination_current-page {
@@ -234,9 +195,6 @@ input[type=&quot;text&quot;].pagination_current-page {
   margin: 0 0 0 0.875em;
   font-size: 1em;
   vertical-align: middle;
-}
-.lt-ie8 .pagination_submit.btn {
-  display: inline;
 }
 .lt-ie8 .pagination_submit.btn {
   display: inline;
@@ -269,37 +227,9 @@ input[type=&quot;text&quot;].pagination_current-page {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-}
-@media only all and (min-width: 40em) {
-  .pagination_form {
-    margin: 0;
-    border-radius: 0.25em;
-  }
-  .pagination_prev {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .pagination_prev,
-  .pagination_prev:link,
-  .pagination_prev:visited {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  .pagination_next,
-  .pagination_next:link,
-  .pagination_next:visited {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
 }</code></pre>
-          </div>
-        </li>
-      </ul>
-      <footer class="wrapper-footer">
-        <h4><a href="https://github.com/cfpb/cf-pagination">View the repository</a></h4>
-      </footer>
+      </div>
     </div>
-    <script src="static/demo/main.min.js"></script>
+    <script src="static/docs/main.min.js"></script>
   </body>
 </html>
