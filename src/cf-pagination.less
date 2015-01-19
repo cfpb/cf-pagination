@@ -4,6 +4,39 @@
    ========================================================================== */
 
 /* topdoc
+    name: Theme variables
+    family: cf-pagination
+    notes:
+      - "The following color and sizing variables are exposed, allowing you to
+         easily override them before compiling."
+    patterns:
+    - name: Colors
+      codenotes:
+        - |
+          @pagination-text
+          @pagination-bg
+    - name: Sizing
+      codenotes:
+        - |
+          @pagination-font-size
+          @pagination-bp
+    tags:
+    - cf-pagination
+    - less
+*/
+
+// Color variables
+
+@pagination-text:               darken(#895983, 15%);
+@pagination-bg:                 lighten(#905c8a, 45%);
+
+// Sizing variables
+
+@pagination-font-size:          16px;
+@pagination-bp:                 640px;
+
+
+/* topdoc
     name: Pagination
     family: cf-pagination
     notes:
@@ -56,9 +89,6 @@
     - fj-forms
 */
 
-@pagination-font-size: 16px;
-@pagination-bp: 640px;
-
 .pagination {
     display: block;
     // Positions .pagination_next relative to this container.
@@ -105,8 +135,8 @@
              unit( 5px / @base-font-size-px, em )
              unit( 6px / @base-font-size-px, em );
     margin: unit( 16px / @base-font-size-px, em) 0 0 0;
-    background: @gray-20;
-    color: @gray;
+    background: @pagination-bg;
+    color: @pagination-text;
     text-align: center;
 }
 

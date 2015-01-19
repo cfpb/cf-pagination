@@ -23,6 +23,38 @@
           <h1 class="docs-title"><span class="docs-icon">&lt;/&gt;</span> cf-pagination docs
           </h1><a href="https://github.com/cfpb/cf-pagination" class="docs-repo">view the repository</a>
         </div>
+        <div id="theme-variables" class="docs-component">
+          <h2 class="docs-component_header"><span>Theme variables</span></h2>
+          <div class="docs-component_intro">
+            <ul class="docs-notes">
+              <li>The following color and sizing variables are exposed, allowing you to easily override them before compiling.</li>
+            </ul>
+          </div>
+          <div class="docs-patterns">
+            <div class="docs-pattern">
+              <h3 class="docs-pattern_header">Colors</h3>
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
+                  <li>
+                    <pre class="docs-code"><code>@pagination-text
+@pagination-bg</code></pre>
+                  </li>
+                </ul>
+              </footer>
+            </div>
+            <div class="docs-pattern">
+              <h3 class="docs-pattern_header">Sizing</h3>
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
+                  <li>
+                    <pre class="docs-code"><code>@pagination-font-size
+@pagination-bp</code></pre>
+                  </li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+        </div>
         <div id="pagination" class="docs-component">
           <h2 class="docs-component_header"><span>Pagination</span></h2>
           <div class="docs-component_intro">
@@ -155,8 +187,8 @@
   display: block;
   padding: 0.3125em 0.3125em 0.375em;
   margin: 1em 0 0 0;
-  background: #e3e4e5;
-  color: #75787b;
+  background: #eee4ed;
+  color: #5b3b57;
   text-align: center;
 }
 .pagination_label {
