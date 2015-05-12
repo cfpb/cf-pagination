@@ -1,5 +1,6 @@
 # cf-pagination
 
+[![Build Status](https://img.shields.io/travis/cfpb/cf-pagination.svg)](https://travis-ci.org/cfpb/cf-pagination) 
 [![Dependency Status](https://gemnasium.com/cfpb/cf-pagination.svg)](https://gemnasium.com/cfpb/cf-pagination)
 
 Basic pagination styling.
